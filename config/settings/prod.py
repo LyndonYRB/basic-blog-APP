@@ -1,6 +1,3 @@
-from distutils.debug import DEBUG
-
-from time import asctime
 import django_on_heroku
 from decouple import config
 
@@ -12,7 +9,7 @@ DEBUG = False
 
 ALLOWED_HOST = [
     'basic-blog.herokuapp.com',
-    'lyndon.blog',
+
 ]
 
 DEBUG_PROPAGATE_EXCEPTIONS = True
