@@ -1,5 +1,5 @@
 from distutils.debug import DEBUG
-import imp
+
 from time import asctime
 import django_on_heroku
 from decouple import config
@@ -35,7 +35,7 @@ LOGGING = {
             'class': 'logging.StreamHandler',
         },
     },
-    'logger': {
+    'loggers': {
         'MYAPP': {
             'handlers': ['console'],
             'level': 'DEBUG',
